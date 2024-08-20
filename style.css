@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff7e5f, #a18cd1, #fbc2eb, #ff9a9e);
+  background-size: 600% 600%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.logo {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+nav .mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav .mobile-menu-button {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+section {
+  padding: 60px 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  margin: 0 0 20px;
+}
+
+.service-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.project-card {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+.project-card h3 {
+  color: #2d3748; /* Dark Gray */
+}
+
+.project-card p {
+  color: #4a5568; /* Gray */
+}
+
+.project-card a {
+  color: #3182ce; /* Blue */
+}
+
+.project-card a:hover {
+  color: #2b6cb0; /* Darker Blue */
+}
+/* Work Request Section */
+#work-request {
+  background-color: #f9fafb; /* Light Gray */
+  padding: 4rem 0;
+}
+
+#work-request h2 {
+  color: #1f2937; /* Dark Gray */
+}
+
+.work-request-form {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.work-request-form h3 {
+  color: #1f2937; /* Dark Gray */
+}
+
+.work-request-form label {
+  color: #4b5563; /* Gray */
+}
+
+.work-request-form input, .work-request-form textarea {
+  border-color: #d1d5db; /* Light Gray */
+}
+
+.work-request-form input:focus, .work-request-form textarea:focus {
+  border-color: #9ca3af; /* Gray-400 */
+  box-shadow: 0 0 0 2px rgba(156, 163, 175, 0.2); /* Gray-400 shadow */
+}
+
+.work-request-form button {
+  background-color: #111827; /* Gray-800 */
+  transition: background-color 0.3s ease;
+}
+
+.work-request-form button:hover {
+  background-color: #1f2937; /* Darker Gray-800 */
+}
